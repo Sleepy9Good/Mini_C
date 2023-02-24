@@ -1,0 +1,25 @@
+/* test void func, Scope, etc*/
+
+float dec(float num){
+	int n;
+	float de;
+	n = num;
+	if(n>=3){
+		n = num;
+		de = num - n;
+	}
+	else de=num*10;
+	return de;
+} 
+
+void main(void)
+{
+	float n_flo ;
+	float _d;
+	int n;
+	n_flo = 4.8;
+	_d=dec(n_flo);
+	_d = _d * 10;
+	n = _d;
+	output(n);
+}
